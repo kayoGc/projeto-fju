@@ -1,6 +1,6 @@
 # Projeto FJU - Back-end 
 
-Esse projeto tem como objetivo ser uma maneira simples de criar relátorios sobre jovens que participam do grupo FJU.
+Esse projeto tem como objetivo ser uma maneira simples de criar relátorios sobre jovens que participam do grupo FJU. No momento é apenas uma ideia que tivemos, nada oficial.
 
 ## Tecnologias usadas
 
