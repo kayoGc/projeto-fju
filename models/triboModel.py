@@ -19,6 +19,7 @@ class RequestPutTribo(BaseModel):
     nome: Optional[str] = None
     participantes: Optional[list[str]] = None    
 
+# aponta aonde a gente quer mecher
 referencia = db.reference('/tribos')
 
 class FirebaseTribo:

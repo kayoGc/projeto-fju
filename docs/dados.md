@@ -22,7 +22,7 @@ O identificador de cada dado é criado pelo proprío Firebase. Ex: **-OdUlsO69X8
         "participantes": [
             "id Usuário A",
             "id Usuário B",
-            // ...
+            // ... 
         ]
     }
 }

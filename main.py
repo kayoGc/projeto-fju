@@ -19,6 +19,7 @@ app = FastAPI()
 from models.triboModel import RequestPostTribo, RequestPutTribo
 from models.jovensModel import RequestPostJovem, RequestPutJovem
 from models.usuariosModel import RequestPostUsuario, RequestPutUsuario
+from models.authModel import RequestPostAuth
 
 # controllers
 from controllers.triboController import TriboController
@@ -30,6 +31,8 @@ jovem = JovemController
 from controllers.usuarioController import UsuarioController
 usuario = UsuarioController
 
+from controllers.authController import AuthController
+auth = AuthController
 
 
 # ---------------------------------------------------------------------
@@ -125,5 +128,16 @@ def atualizarUsuarios(id: str, corpoUsuarios: RequestPutUsuario):
 @app.delete("/api/usuarios/{id}")
 def deletarUsuarios(id: str):
     return usuario.deletar(id)
+
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# rotas auth (autenticação)
+
+# POST
+@app.post("/api/auth")
+def criarUsuario(dados: RequestPostAuth):
+    return auth.criar(dados)
 
 # --------------------------------------------------
